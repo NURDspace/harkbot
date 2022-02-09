@@ -17,7 +17,7 @@ const (
 	DefaultRealname      = "ircbot"
 	DefaultCommandPrefix = "!"
 	DefaultOwner         = ""
-	DefaultDbPath        = "./jaken.db"
+	DefaultDbPath        = "./harkbot.db"
 	DefaultPluginPath    = "./plugins"
 
 	HelpCfgFile       = "Yaml file containing configuration (" + DefaultCfgFile + ")"

@@ -1,4 +1,4 @@
-TARGET = jaken
+TARGET = harkbot
 
 BUILD_DIR = ./build
 CMD_DIR = ./cmd
