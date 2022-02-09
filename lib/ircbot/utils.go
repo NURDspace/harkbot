@@ -30,7 +30,7 @@ func (bot *IrcBot) AddHostmaskFor(nickname string) {
 			if !bot.state.HasHostmask(hostmask) {
 				bot.state.AddHostmaskToNickname(hostmask, nickname)
 			}
-			bot.conn.RemoveCallback("311", 0)
+			// bot.conn.RemoveCallback("311", 0)
 		}(e)
 	})
 
