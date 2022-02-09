@@ -29,15 +29,11 @@ func (bot *IrcBot) IsOwner(hostmask string) bool {
 }
 
 func (bot *IrcBot) IsAuthorized(hostmask, command string) bool {
-
-	/*
-		// The owner is allowed to run all commands
-		if bot.IsOwner(hostmask) {
-			fmt.Printf("Allowed %s for %s: owner\n", command, hostmask)
-			return true
-		}
-
-	*/
+	// The owner is allowed to run all commands
+	if bot.IsOwner(hostmask) {
+		fmt.Printf("Allowed %s for %s: owner\n", command, hostmask)
+		return true
+	}
 
 	role := bot.state.GetBindingRole(command)
 	if role == "" {
