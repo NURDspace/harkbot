@@ -4,9 +4,9 @@ import (
 	"crypto/tls"
 	"fmt"
 	ircevent "github.com/thoj/go-ircevent"
-	"jaken/lib/broker"
-	"jaken/lib/common"
-	"jaken/lib/ircstate"
+	"harkbot/lib/broker"
+	"harkbot/lib/common"
+	"harkbot/lib/ircstate"
 	"regexp"
 	"strings"
 )

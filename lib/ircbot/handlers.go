@@ -1,7 +1,7 @@
 package ircbot
 
 import (
-	"jaken/lib/common"
+	"harkbot/lib/common"
 	"strings"
 )
 

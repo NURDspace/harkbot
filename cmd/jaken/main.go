@@ -2,11 +2,11 @@ package main
 
 import (
 	"flag"
-	"jaken/lib/broker"
-	"jaken/lib/common"
-	"jaken/lib/config"
-	"jaken/lib/ircbot"
-	"jaken/lib/ircstate"
+	"harkbot/lib/broker"
+	"harkbot/lib/common"
+	"harkbot/lib/config"
+	"harkbot/lib/ircbot"
+	"harkbot/lib/ircstate"
 )
 
 func main() {

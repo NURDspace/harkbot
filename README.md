@@ -1,12 +1,12 @@
 # Design principles
-This bot is based on a couple of different design criteriums:
+This bot is based on a couple of design criteriums:
 * There needs to be a loose coupling between the bot and the plugins
 * Fine-grained ACLs up to the command level need to be possible
 
 ## Loose coupling
 Loose coupling of the bot will allow rapid plugin development without involving the bot. Furthermore, since the bots
-do not depend on any IRC semantics, it is possible to run the bot outside of the context of the bot. This is implemented
-by adding mqtt in between.
+do not depend on any IRC semantics, it is possible to run the bot outside of the context of the bot. The link between
+the plugins and the bot is provided by mqtt topics.
 
 ## Fine-grained ACLs
 In order to implement some form of access-control, ACLs need to be in place. This need to be on the hostmask/command
